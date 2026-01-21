@@ -20,6 +20,7 @@ You have specialized skills in `.claude/skills/`. **Use them constantly:**
 | Skill | When to Use | Invocable |
 |-------|-------------|-----------|
 | **onboarding** | New project setup, no SITE.md exists | `/onboarding` |
+| **page-remake** | User provides URL to remake/rebuild/recreate | `/page-remake` |
 | **brand-identity** | Choosing colors, fonts, visual direction | Auto |
 | **copywriting** | Writing any text for the site | Auto |
 | **marketing-site-design** | Planning page layouts, sections | Auto |
