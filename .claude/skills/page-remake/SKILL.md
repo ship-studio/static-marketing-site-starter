@@ -1,12 +1,12 @@
 ---
 name: page-remake
-description: Remake and improve existing web pages from URL examples. Use when user provides a URL and asks to "remake", "rebuild", "recreate", or "use as inspiration" for their site. Screenshots the original, analyzes branding, and rebuilds section-by-section to create something better.
+description: Remake and improve existing web pages from URL examples. Use when user provides a URL and asks to "remake", "rebuild", "recreate", or "use as inspiration" for their site. Screenshots the original, analyzes branding, and rebuilds section-by-section.
 user_invocable: true
 ---
 
 # Page Remake Skill
 
-This skill transforms existing web pages into improved, anti-AI-compliant versions. It captures the essence of the original while making it distinctly better.
+This skill transforms existing web pages into your own version. It captures the essence of the original and rebuilds it in your codebase.
 
 ## When to Trigger
 
@@ -50,6 +50,28 @@ public/
 ```
 
 **Tell the user:** "I'm taking a screenshot of [URL] so I can study its design. This will be my reference as I rebuild each section."
+
+---
+
+## Phase 1.5: Choose Your Approach
+
+After capturing the screenshot, ask the user which approach they prefer:
+
+> "I've captured the original. How should I approach this remake?
+>
+> **Option 1: Exact Remake**
+> Recreate each section as closely as possible—same structure, layout, content patterns.
+> Best if: You love the original and just need it in your codebase.
+>
+> **Option 2: Same Brand, Fresh Build**
+> Keep the fonts, colors, and brand feel. May reorganize or improve layouts.
+> Best if: You want the brand identity but are open to improvements.
+>
+> **Option 3: Inspired Remake** (Recommended)
+> Capture the essence but apply thoughtful design choices—distinctive fonts, optimized layouts, better copy.
+> Best if: You want something that feels similar but with intentional improvements."
+
+Wait for the user's choice before proceeding.
 
 ---
 
@@ -112,6 +134,12 @@ Save this to the project root:
 - **URL:** [the URL analyzed]
 - **Screenshot:** public/references/original-[name]-[date].png
 
+## Remake Approach
+- **Selected:** [Exact / Same Brand / Inspired]
+- **Font Handling:** [Match exactly / Find closest Google Font / Claude's choice]
+- **Color Handling:** [Match exactly / Match palette / Optimize]
+- **Layout Handling:** [Replicate faithfully / Preserve structure / Optimize freely]
+
 ## Brand Overview
 
 ### Inferred Business Type
@@ -147,12 +175,14 @@ Save this to the project root:
 - **Style:** [Serif / Sans-Serif / Display / Handwritten]
 - **Weight:** [Light / Regular / Bold / Black]
 - **Character:** [Geometric / Humanist / Modern / Classic]
-- **Recommended Anti-AI Alternative:** [suggest from brand-identity approved fonts]
+- **Identified Font:** [if recognizable]
+- **Google Font Alternative:** [suggest closest match]
 
 ### Body Text
 - **Style:** [Serif / Sans-Serif]
 - **Readability:** [Compact / Generous spacing]
-- **Recommended Anti-AI Alternative:** [suggest from brand-identity approved fonts]
+- **Identified Font:** [if recognizable]
+- **Google Font Alternative:** [suggest closest match]
 
 ### Typography Hierarchy
 [Note size relationships, spacing patterns]
@@ -213,9 +243,6 @@ Save this to the project root:
 - [Opportunity 2]
 - [Opportunity 3]
 
-### Anti-AI Compliance Issues
-[List any elements that violate anti-AI rules - banned fonts, colors, layouts]
-
 ---
 
 *This analysis guides the remake. Reference it during each section build.*
@@ -257,14 +284,37 @@ Create SITE.md using the brand analysis as the visual foundation:
 Then create SITE.md with:
 - Business info from user
 - Visual direction from BRAND-ANALYSIS.md
-- Anti-AI approved font alternatives
-- Adjusted color palette (if original uses banned colors)
+- Font choices based on selected approach
+- Color palette based on selected approach
 
 ---
 
 ## Phase 4: Section-by-Section Rebuild
 
 Build each section one at a time, referencing the original screenshot.
+
+### Approach-Specific Guidelines
+
+#### For Exact Remake
+- Replicate layouts faithfully
+- Match colors as closely as possible
+- Find closest Google Font matches for typography
+- Preserve content structure and hierarchy
+- Skip improvement suggestions during build
+
+#### For Same Brand, Fresh Build
+- Use original fonts/colors exactly or find closest matches
+- Preserve the overall brand feel
+- May suggest layout improvements if beneficial
+- Keep content patterns but improve copy where helpful
+- Focus on maintaining brand consistency
+
+#### For Inspired Remake (Recommended)
+- Full creative freedom with design choices
+- Apply human-first design principles
+- Choose distinctive fonts that match the brand feel
+- Optimize layouts for clarity and impact
+- Improve copy following copywriting skill guidelines
 
 ### For EACH Section:
 
@@ -274,37 +324,22 @@ Look at how the original handled this section:
 - What content is included?
 - What's the visual treatment?
 
-#### 2. Apply Anti-AI Rules
+#### 2. Apply Selected Approach Rules
+Based on user's choice:
+- **Exact:** Match faithfully
+- **Same Brand:** Keep identity, consider improvements
+- **Inspired:** Capture essence, apply best practices
 
-Check against banned elements (from brand-identity skill):
-
-**Colors to avoid:**
-- `#3B82F6` (Tailwind blue-500) as primary accent
-- Purple-to-blue gradients on white
-- Teal + coral combinations
-- Pure `#000000` on pure `#FFFFFF`
-
-**Layouts to avoid:**
-- 3-column feature grids with generic icons
-- Centered everything
-- Equal spacing throughout
-
-**Fonts to avoid (as primary):**
-- Inter, Roboto, Arial, Helvetica, Open Sans, system fonts
-
-**Backgrounds to avoid:**
-- Abstract blob SVGs
-- Wave section dividers
-- Gradient mesh backgrounds
-- Dot grid patterns
-
-#### 3. Write Better Copy
+#### 3. Write Copy
 
 Use copywriting skill guidelines:
-- No banned words (revolutionize, leverage, seamless, etc.)
+- No overused words (revolutionize, leverage, seamless, etc.)
 - Specific, concrete language
 - Focus on outcomes, not features
 - Human-sounding tone
+
+For **Exact** remakes, follow the original copy patterns more closely.
+For **Inspired** remakes, feel free to improve significantly.
 
 #### 4. Implement the Section
 
@@ -313,15 +348,6 @@ Use react-nextjs-expert patterns:
 - Tailwind CSS only (no separate CSS files)
 - Responsive design
 - Accessible markup
-
-#### 5. Make It ON BRAND but IMPROVED
-
-The goal is NOT to copy exactly. The goal is to:
-- Capture the essence and feeling
-- Apply the brand personality
-- Fix any anti-AI violations
-- Improve weak areas
-- Make copy more compelling
 
 ### Section Build Order
 
@@ -336,7 +362,7 @@ The goal is NOT to copy exactly. The goal is to:
 ### After Each Section
 
 Tell the user what you built:
-> "I just rebuilt the [Section Name]. Here's what I kept from the original and what I improved: [brief summary]"
+> "I just rebuilt the [Section Name]. Here's what I kept from the original and what I changed: [brief summary]"
 
 ---
 
@@ -348,43 +374,48 @@ After rebuilding all sections:
 
 1. Review the rebuilt page against the original screenshot
 2. Check that the brand essence was captured
-3. Verify all anti-AI rules are followed
-4. Ensure the rebuilt version feels IMPROVED, not just copied
+3. Verify approach-specific requirements were met
+4. Ensure the rebuilt version meets the user's expectations
 
 ### Checklist
 
-- [ ] No banned fonts as primary
-- [ ] No banned colors (`#3B82F6`, purple gradients, etc.)
-- [ ] No 3-column feature grids with generic icons
-- [ ] No banned backgrounds (blobs, waves, dot grids)
-- [ ] No banned copywriting words
-- [ ] 60-30-10 color rule followed
+**For All Approaches:**
+- [ ] Brand feel is captured
+- [ ] Colors work well together
 - [ ] Typography hierarchy is clear
 - [ ] Copy is specific and human-sounding
-- [ ] Layout varies (not all centered)
-- [ ] At least one distinctive design choice per section
 - [ ] Mobile responsive
 - [ ] Accessible (proper headings, alt text, contrast)
+
+**For Exact Remakes:**
+- [ ] Layouts closely match original
+- [ ] Color palette matches
+- [ ] Font choices are as close as possible
+- [ ] Content structure preserved
+
+**For Inspired Remakes:**
+- [ ] At least one distinctive design choice per section
+- [ ] Layout has visual interest
+- [ ] Typography feels intentional
+- [ ] Human-first design principles applied
 
 ### Final Report to User
 
 > "I've finished rebuilding [original URL]. Here's a summary:
 >
+> **Approach Used:** [Exact / Same Brand / Inspired]
+>
 > **Sections Built:** [list]
 >
-> **Key Improvements:**
-> - [Improvement 1]
-> - [Improvement 2]
-> - [Improvement 3]
->
-> **Anti-AI Fixes Applied:**
-> - [Fix 1]
-> - [Fix 2]
+> **Key Decisions:**
+> - [Decision 1]
+> - [Decision 2]
+> - [Decision 3]
 >
 > **Files Created/Modified:**
 > - [File list]
 >
-> You can preview your rebuilt site at [localhost URL]. Compare it to the original - it should feel like the same brand but better executed!"
+> You can preview your rebuilt site at [localhost URL]. Compare it to the original!"
 
 ---
 
@@ -394,7 +425,7 @@ This skill orchestrates multiple other skills:
 
 | Skill | When to Use |
 |-------|-------------|
-| **brand-identity** | Check all color/font choices against anti-AI rules |
+| **brand-identity** | Check all color/font choices |
 | **copywriting** | Write all text content (headlines, body, CTAs) |
 | **marketing-site-design** | Section architecture and conversion patterns |
 | **frontend-design** | Visual implementation and creative direction |
@@ -408,7 +439,7 @@ This skill orchestrates multiple other skills:
 - Be enthusiastic about the remake process
 - Explain your analysis in simple terms
 - Show the user you understand what they liked about the original
-- Highlight improvements you're making
+- Highlight changes you're making and why
 - Keep them informed as you build each section
 - Celebrate the final result
 
@@ -417,9 +448,10 @@ This skill orchestrates multiple other skills:
 > "Great choice! I'm going to remake [URL] for you. Here's my plan:
 >
 > 1. First, I'll screenshot the original so I have a reference
-> 2. Then I'll analyze everything - colors, fonts, layout, messaging
-> 3. I'll create a brand document so we're both on the same page
-> 4. Then I'll rebuild it section by section, making it even better
+> 2. Then I'll ask how closely you want me to follow it
+> 3. I'll analyze everything - colors, fonts, layout, messaging
+> 4. I'll create a brand document so we're both on the same page
+> 5. Then I'll rebuild it section by section
 >
 > Let me start by capturing that screenshot..."
 

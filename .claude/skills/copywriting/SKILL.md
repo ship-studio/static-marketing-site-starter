@@ -1,59 +1,59 @@
 ---
 name: copywriting
-description: Write human-sounding marketing copy that converts. Contains banned buzzwords, headline formulas, CTA patterns, and tone guidelines to avoid generic AI text.
+description: Write human-sounding marketing copy that converts. Contains overused word alternatives, headline formulas, CTA patterns, and tone guidelines for specific, authentic text.
 ---
 
 # Copywriting Skill
 
-This skill ensures all website copy sounds human, specific, and persuasive - not like AI-generated fluff.
+This skill ensures all website copy sounds human, specific, and persuasive—not generic or templated.
 
-## BANNED Words & Phrases
+## Overused Words & Phrases
 
-**Never use these words - they scream "AI wrote this":**
+**These words can feel generic. Consider more specific alternatives:**
 
-### Buzzword Hall of Shame
-- Revolutionize / Revolutionary
-- Leverage (as a verb)
-- Synergy / Synergistic
-- Cutting-edge
-- Seamless / Seamlessly
-- Empower / Empowering
-- Game-changer / Game-changing
-- Next-generation
-- Best-in-class
-- World-class
-- Unlock (your potential, growth, etc.)
-- Elevate
-- Transform / Transformative
-- Streamline
-- Robust
-- Scalable (unless technical context)
-- Innovative / Innovation (unless proving it)
-- Disrupt / Disruptive
-- Holistic
-- Ecosystem
-- Paradigm
-- Optimize (unless technical)
-- Dynamic
-- Curated
-- Bespoke
-- Thoughtfully designed
+### Words to Replace with Specifics
+- Revolutionize / Revolutionary → describe the actual change
+- Leverage → use, apply, take advantage of
+- Synergy / Synergistic → collaboration, teamwork, combined effort
+- Cutting-edge → new, modern, recently developed
+- Seamless / Seamlessly → smooth, easy, without friction
+- Empower / Empowering → help, enable, give you control
+- Game-changer / Game-changing → significant, meaningful, important
+- Next-generation → new, updated, version 2.0
+- Best-in-class → top-rated, highly rated, #1 in [category]
+- World-class → excellent, expert-level
+- Unlock (your potential, growth, etc.) → achieve, reach, gain
+- Elevate → improve, enhance, raise
+- Transform / Transformative → change, improve, update
+- Streamline → simplify, speed up, make easier
+- Robust → strong, reliable, thorough
+- Scalable → grows with you, flexible, adaptable
+- Innovative / Innovation → new approach, different method
+- Disrupt / Disruptive → change, challenge, rethink
+- Holistic → complete, whole, comprehensive
+- Ecosystem → system, network, community
+- Paradigm → approach, model, method
+- Optimize → improve, refine, tune
+- Dynamic → active, changing, responsive
+- Curated → selected, chosen, hand-picked
+- Bespoke → custom, personalized, tailored
+- Thoughtfully designed → [describe what makes it thoughtful]
 
-### Banned Phrases
-- "In today's fast-paced world..."
-- "We're passionate about..."
-- "Our team of experts..."
-- "Take your X to the next level"
-- "One-stop shop"
-- "At the end of the day..."
-- "It's not just X, it's Y"
-- "We don't just X, we Y"
-- "More than just a X"
-- "Your partner in X"
-- "Solutions for all your X needs"
-- "Whatever your X needs"
-- "Say goodbye to X and hello to Y"
-- "The future of X is here"
+### Phrases to Avoid
+- "In today's fast-paced world..." → just get to the point
+- "We're passionate about..." → show, don't tell
+- "Our team of experts..." → specific credentials work better
+- "Take your X to the next level" → describe the actual outcome
+- "One-stop shop" → be specific about what you offer
+- "At the end of the day..." → unnecessary filler
+- "It's not just X, it's Y" → just say what it is
+- "We don't just X, we Y" → just say what you do
+- "More than just a X" → say what it actually is
+- "Your partner in X" → describe the relationship specifically
+- "Solutions for all your X needs" → be specific
+- "Whatever your X needs" → be specific
+- "Say goodbye to X and hello to Y" → describe the change
+- "The future of X is here" → describe what's new
 
 ---
 
@@ -61,8 +61,8 @@ This skill ensures all website copy sounds human, specific, and persuasive - not
 
 ### Be Specific
 
-| Bad (Vague) | Good (Specific) |
-|-------------|-----------------|
+| Vague | Specific |
+|-------|----------|
 | "Save time" | "Save 3 hours every week" |
 | "Affordable pricing" | "Plans start at $29/month" |
 | "Fast delivery" | "Delivered in 2 days or less" |
@@ -72,8 +72,8 @@ This skill ensures all website copy sounds human, specific, and persuasive - not
 
 ### Use Active Voice
 
-| Bad (Passive) | Good (Active) |
-|---------------|---------------|
+| Passive | Active |
+|---------|--------|
 | "Your order will be shipped" | "We ship your order" |
 | "Results can be seen in..." | "See results in..." |
 | "Appointments are scheduled by..." | "Schedule your appointment" |
@@ -117,13 +117,13 @@ This skill ensures all website copy sounds human, specific, and persuasive - not
 
 ## CTA Button Copy
 
-### BANNED CTA Text
-- "Submit"
-- "Click here"
-- "Learn more" (lazy)
-- "Get started" (vague)
-- "Sign up" (generic)
-- "Contact us" (passive)
+### Generic CTAs to Improve
+- "Submit" → describe what happens next
+- "Click here" → say where they're going
+- "Learn more" → be specific about what they'll learn
+- "Get started" → describe the first step
+- "Sign up" → tell them what they're signing up for
+- "Contact us" → make it action-oriented
 
 ### Better CTA Patterns
 
@@ -225,11 +225,11 @@ Read SITE.md for brand personality, then adjust:
 
 ## Checklist Before Publishing Copy
 
-- [ ] No banned words or phrases used
-- [ ] Every claim is specific (numbers, timeframes, outcomes)
+- [ ] Replaced generic words with specific alternatives
+- [ ] Every claim includes specifics (numbers, timeframes, outcomes)
 - [ ] Active voice throughout
 - [ ] Headlines under 12 words
 - [ ] Body paragraphs under 3 sentences
 - [ ] CTAs use verb + outcome format
 - [ ] Tone matches SITE.md brand personality
-- [ ] Would a human copywriter approve this?
+- [ ] Sounds like a human wrote it

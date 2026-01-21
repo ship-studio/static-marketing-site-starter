@@ -1,12 +1,13 @@
 {
-  "name": "nextjs",
+  "name": "marketingstack",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "postinstall": "npx playwright install chromium"
   },
   "dependencies": {
     "next": "16.1.2",
@@ -14,6 +15,7 @@
     "react-dom": "19.2.3"
   },
   "devDependencies": {
+    "@playwright/mcp": "^0.0.18",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

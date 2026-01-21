@@ -1,11 +1,11 @@
 ---
 name: brand-identity
-description: Enforces distinctive brand colors, typography, and visual rules. Contains anti-AI design rules to ensure sites look human-crafted, not AI-generated.
+description: Guides distinctive brand colors, typography, and visual choices. Contains human-first design principles to ensure sites look intentional and memorable.
 ---
 
 # Brand Identity Skill
 
-This skill ensures every site has a distinctive, human-crafted visual identity. It contains strict rules to avoid "AI slop" aesthetics.
+This skill ensures every site has a distinctive, intentional visual identity. It provides guidance for creating memorable designs.
 
 ## The 60-30-10 Color Rule
 
@@ -49,11 +49,11 @@ Use these as STARTING POINTS - always customize:
 
 ---
 
-## Typography Rules
+## Typography Guidance
 
-### BANNED Fonts (Never Use as Primary)
+### Common Fonts to Use Thoughtfully
 
-These fonts scream "AI-generated":
+These fonts work well but are everywhere. Consider whether you need distinction:
 - Inter
 - Roboto
 - Arial
@@ -61,7 +61,7 @@ These fonts scream "AI-generated":
 - Open Sans
 - System fonts stack as primary
 
-### Approved Font Pairings
+### Distinctive Font Pairings
 
 Always pair a **display font** (headings) with a **body font**:
 
@@ -138,43 +138,43 @@ export default function RootLayout({ children }) {
 
 ---
 
-## ANTI-AI DESIGN RULES
+## Human-First Design Principles
 
-### Colors - NEVER Use
+### Colors - Think Twice About
 
-| Banned | Why | Alternative |
-|--------|-----|-------------|
-| `#3B82F6` (Tailwind blue-500) | Default AI choice | Pick a unique blue: `#2563EB`, `#1D4ED8`, or non-blue accent |
-| Purple-to-blue gradient | AI aesthetic cliche | Single color, or unexpected gradient (orange→pink, green→teal) |
+| Common Default | Why Consider Alternatives | Alternative Ideas |
+|----------------|---------------------------|-------------------|
+| `#3B82F6` (Tailwind blue-500) | It's the default, so it's everywhere | Pick a unique blue: `#2563EB`, `#1D4ED8`, or a non-blue accent |
+| Purple-to-blue gradient | Very common pattern | Single color, or unexpected gradient (orange→pink, green→teal) |
 | Teal + Coral combo | Overused "modern" palette | Pick ONE and find a neutral complement |
-| Rainbow gradients | Screams "AI made this" | Two-color max, subtle angle |
-| Pure `#000000` on `#FFFFFF` | Harsh, lazy | Off-black (`#1C1917`) on off-white (`#FAFAF9`) |
+| Rainbow gradients | Can feel unintentional | Two-color max, subtle angle |
+| Pure `#000000` on `#FFFFFF` | Harsh contrast | Off-black (`#1C1917`) on off-white (`#FAFAF9`) |
 
-### Layouts - NEVER Use
+### Layouts - Consider Alternatives
 
-| Banned | Why | Alternative |
-|--------|-----|-------------|
-| 3-column feature grid with icons | The #1 AI layout | 2-column, asymmetric, or bento grid |
-| Centered everything | Boring, predictable | Left-align body, vary section alignment |
-| Equal spacing throughout | Robotic feel | Vary spacing: tight headers, generous between sections |
-| Generic icon set (Heroicons default) | Instantly recognizable as template | Phosphor Icons, Lucide with custom stroke, or no icons |
+| Common Pattern | Why Try Alternatives | Alternative Ideas |
+|----------------|---------------------|-------------------|
+| 3-column feature grid with icons | Very common, can feel templated | 2-column, asymmetric, or bento grid |
+| Centered everything | Predictable | Left-align body, vary section alignment |
+| Equal spacing throughout | Can feel mechanical | Vary spacing: tight headers, generous between sections |
+| Generic icon set (Heroicons default) | Recognizable as defaults | Phosphor Icons, Lucide with custom stroke, or no icons |
 
-### Backgrounds - NEVER Use
+### Backgrounds - Patterns That Feel Dated
 
-| Banned | Why | Alternative |
-|--------|-----|-------------|
-| Abstract blob SVGs | AI calling card | Geometric shapes, grain texture, or solid color |
-| Wave dividers | 2020 template look | Hard edges, diagonal slices, or no dividers |
+| Pattern | Why It Feels Dated | Alternatives |
+|---------|-------------------|--------------|
+| Abstract blob SVGs | Was trendy, now overused | Geometric shapes, grain texture, or solid color |
+| Wave dividers | 2020 template aesthetic | Hard edges, diagonal slices, or no dividers |
 | Gradient mesh backgrounds | Overplayed | Subtle radial gradient, solid color, or photography |
-| Grid of dots | Too common | Lines, noise texture, or nothing |
+| Grid of dots | Very common | Lines, noise texture, or nothing |
 
-### Images - NEVER Use
+### Images - Generic vs Intentional
 
-| Banned | Why | Alternative |
-|--------|-----|-------------|
+| Generic Choice | Why Consider Alternatives | Better Options |
+|----------------|---------------------------|----------------|
 | Handshake stock photos | Meaningless corporate | Real team photos or none |
-| Diverse group pointing at laptop | Cliche | Action shots or illustrations |
-| Abstract 3D shapes | AI art indicator | Real photos, custom illustration, or typography-focused |
+| Diverse group pointing at laptop | Overused cliche | Action shots or illustrations |
+| Abstract 3D shapes | Very common default | Real photos, custom illustration, or typography-focused |
 | Floating UI mockups | Template aesthetic | Screenshots in context or no mockups |
 
 ---
@@ -183,18 +183,18 @@ export default function RootLayout({ children }) {
 
 When building, CHECK every component against:
 
-1. **Does it use banned elements?** (fonts, colors, layouts)
-2. **Does it follow 60-30-10?** (check color distribution)
+1. **Does it use common defaults?** Consider if distinction is needed
+2. **Does it follow 60-30-10?** Check color distribution
 3. **Is typography properly loaded?** (next/font, CSS variables)
-4. **Would a human designer make this choice?** (if generic, differentiate)
+4. **Does it feel intentional?** Every choice should have a reason
 
-### Quick Fixes for AI-Looking Sites
+### Quick Improvements for Generic-Looking Sites
 
-| Problem | Fix |
-|---------|-----|
+| Issue | Fix |
+|-------|-----|
 | Looks too "template" | Add asymmetry, vary section layouts |
 | Colors feel generic | Commit to ONE bold accent, desaturate the rest |
-| Typography is boring | Increase heading size contrast, add letter-spacing |
+| Typography feels flat | Increase heading size contrast, add letter-spacing |
 | Too much whitespace | Add subtle background texture or tint |
 | Too busy | Remove one element from every section |
 | Feels corporate | Add one unexpected color or playful element |
@@ -203,11 +203,10 @@ When building, CHECK every component against:
 
 ## Checklist Before Shipping
 
-- [ ] No banned fonts in primary use
-- [ ] No `#3B82F6` as primary accent
-- [ ] No purple-to-blue gradients
-- [ ] No 3-column feature grids with generic icons
+- [ ] Typography choices are intentional (not just defaults)
+- [ ] Colors feel distinctive (not just Tailwind defaults)
+- [ ] Layout has visual interest (not all centered/equal)
 - [ ] 60-30-10 color rule followed
 - [ ] Fonts loaded with next/font
 - [ ] At least ONE distinctive design choice per page
-- [ ] Would pass the "human designer" test
+- [ ] Design feels intentional and human

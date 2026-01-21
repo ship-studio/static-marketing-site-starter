@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Marketingstack
+
+Build marketing sites with Claude Code. No coding required.
+
+## What is Marketingstack?
+
+Marketingstack is a Next.js template designed specifically for building marketing websites with Claude Code. Just describe what you want to build, and Claude handles all the code.
 
 ## Getting Started
 
-First, run the development server:
+1. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+2. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+3. **Open Claude Code and start building**
+
+   Just describe what you want:
+   - "Create a landing page for my coffee shop"
+   - "I need a portfolio site with a contact form"
+   - "Build a pricing page with three tiers"
+
+## Available Commands
+
+| Command | Description |
+|---------|-------------|
+| `/onboarding` | Set up a new project. Claude asks about your business and creates a personalized build plan. |
+| `/page-remake` | Rebuild from an example. Share a URL you like, and Claude creates something similar. |
+| `/sanity-cms` | Add editable content. When you want to update text yourself without touching code. |
+
+## How It Works
+
+1. **Start a conversation** - Just type what you want to build
+2. **Claude builds it** - All the code is handled for you
+3. **Refine together** - Ask for changes until it's perfect
+
+## Project Structure
+
+```
+app/
+├── layout.tsx       # Page wrapper (fonts, metadata)
+├── page.tsx         # Homepage
+├── globals.css      # Global styles
+└── [folders]/       # Other pages (about/, contact/, etc.)
+components/          # Reusable pieces
+public/              # Images and files
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Design Philosophy
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Marketingstack follows **Human-First Design Principles**:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Intentional** - Every design choice has a reason
+- **Distinctive** - Not a copy of common patterns
+- **Memorable** - Something visitors remember
+- **Human** - Warm and approachable
 
-## Learn More
+## Documentation
 
-To learn more about Next.js, take a look at the following resources:
+- **CLAUDE.md** - Instructions for Claude Code (how to build your site)
+- **SITE.md** - Your project documentation (created during onboarding)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [Next.js 14+](https://nextjs.org/) - React framework
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [Google Fonts](https://fonts.google.com/) - Typography
 
-## Deploy on Vercel
+## Deploy
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Deploy to Vercel with one click:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
+
+Or deploy manually:
+```bash
+npm run build
+npm start
+```
+
+---
+
+Built for use with [Claude Code](https://claude.com/claude-code)

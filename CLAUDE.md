@@ -28,60 +28,85 @@ You have specialized skills in `.claude/skills/`. **Use them constantly:**
 | **documentation-writer** | After EVERY code change - update SITE.md | Auto |
 | **react-nextjs-expert** | Writing any React/Next.js code | Auto |
 | **frontend-design** | Creating any visual component | Auto |
+| **animations** | Adding micro-interactions and motion | Auto |
 | **react-best-practices** | Performance optimization | Auto |
 
 ### Workflow for Every Build Task
 
 1. Check `SITE.md` for brand personality and preferences
 2. Use `marketing-site-design` to plan section architecture
-3. Use `brand-identity` to select colors/fonts (follow anti-AI rules)
-4. Use `copywriting` to write human-sounding text
+3. Use `brand-identity` to select colors/fonts (follow design principles)
+4. Use `copywriting` to write specific, human-sounding text
 5. Use `frontend-design` + `react-nextjs-expert` for implementation
 6. Use `documentation-writer` to update SITE.md after changes
 
 ---
 
-## Anti-AI Design Rules
+## Human-First Design Principles
 
-**These sites must NOT look AI-generated.** Follow these rules strictly.
+Great design feels intentional and distinctive. These guidelines help create sites that stand out and feel memorable.
 
-### Typography - NEVER Use as Primary Font
-- Inter
-- Roboto
-- Arial
-- Helvetica (for body)
-- Open Sans
-- System fonts
+### The Goal
 
-**ALWAYS use distinctive Google Fonts.** See `brand-identity` skill for approved pairings.
+Sites should feel:
+- **Intentional** - Every choice has a reason
+- **Distinctive** - Not a copy of common patterns
+- **Memorable** - Something visitors remember
+- **Human** - Warm and approachable
 
-### Colors - NEVER Use
-- `#3B82F6` (Tailwind blue-500) as primary accent
-- Purple-to-blue gradients on white backgrounds
-- Teal + coral combinations
-- Rainbow gradients
-- Pure black `#000000` on pure white `#FFFFFF`
+### Typography Guidance
 
-**ALWAYS use 60-30-10 color distribution** with unique color choices.
+Common fonts like Inter, Roboto, and system fonts work well but are everywhere. For distinction, explore alternatives:
 
-### Layouts - NEVER Use
-- 3-column feature grids with generic icons (the #1 AI tell)
-- Centered everything
-- Equal spacing throughout
-- Generic Heroicons as the only visual element
+**Modern & Clean:**
+- Space Grotesk + DM Sans
+- Outfit + Source Sans 3
+- Sora + Nunito
 
-**ALWAYS use varied, asymmetric layouts** with visual interest.
+**Elegant & Refined:**
+- Playfair Display + Lato
+- Cormorant Garamond + Montserrat
+- Fraunces + Work Sans
 
-### Backgrounds - NEVER Use
+**Warm & Approachable:**
+- Poppins + Nunito Sans
+- Quicksand + Open Sans
+- Comfortaa + Mulish
+
+These aren't rules—they're starting points. The right font depends on the brand.
+
+### Color Guidance
+
+**Think twice about these common defaults:**
+- `#3B82F6` (Tailwind blue-500) as primary accent - it's everywhere
+- Purple-to-blue gradients on white backgrounds - very common
+- Pure black `#000000` on pure white `#FFFFFF` - can feel harsh
+
+**Consider instead:**
+- Off-black (`#1C1917`) on off-white (`#FAFAF9`) for softer contrast
+- Custom accent colors that reflect the brand's personality
+- The 60-30-10 rule: 60% dominant, 30% secondary, 10% accent
+
+### Layout Guidance
+
+**Common patterns to use thoughtfully:**
+- 3-column feature grids with generic icons - try alternatives like 2-column, asymmetric, or bento layouts
+- Centered everything - vary alignment for visual interest
+- Equal spacing throughout - vary spacing for rhythm
+
+**Background patterns that feel dated:**
 - Abstract blob SVGs
 - Wave section dividers
 - Gradient mesh backgrounds
-- Dot grid patterns
 
-### Copy - NEVER Use These Words
+Alternatives: geometric shapes, grain textures, solid colors with intentional variation, or high-quality photography.
+
+### Writing Guidance
+
+**Overused words to consider alternatives for:**
 revolutionize, leverage, synergy, cutting-edge, seamless, empower, game-changer, next-generation, best-in-class, world-class, unlock, elevate, transform, streamline, robust, scalable, innovative, disrupt, holistic, ecosystem, paradigm, optimize, dynamic, curated, bespoke
 
-**ALWAYS write specific, human copy.** See `copywriting` skill for guidelines.
+**Instead:** Be specific. Use numbers. Focus on outcomes. Write like a human talking to another human.
 
 ---
 
@@ -155,14 +180,12 @@ sanity/              # CMS configuration (if added via /sanity-cms)
 - Put images in `public/` folder
 - Update `SITE.md` after every change
 - Explain what you did in simple terms
-- Follow anti-AI design rules strictly
+- Make intentional, distinctive design choices
 
 ### DON'T:
 - NEVER create `.html` files - this is React/Next.js
 - NEVER create separate `.css` files - use Tailwind
 - NEVER use `<script>` tags - this is React
-- NEVER use banned fonts, colors, or layouts (see anti-AI rules)
-- NEVER use banned copywriting words
 - NEVER leave the user confused about what changed
 - NEVER use technical jargon without explaining it
 - NEVER skip updating SITE.md
@@ -195,7 +218,7 @@ If the user asks for an "About" page:
 
 ## After Every Task
 
-1. Make the requested changes (using your skills, following anti-AI rules)
+1. Make the requested changes (using your skills, following design principles)
 2. Update `SITE.md` with what changed
 3. Tell the user what you did in plain English
 4. Let them know how to see the changes
@@ -220,9 +243,9 @@ The user is NOT a developer. They're using Marketingstack to build a website wit
 
 1. **Onboard them properly** (if no SITE.md)
 2. **Build what they ask for** (using your skills)
-3. **Make it look human-designed** (not AI-generated)
+3. **Make it feel distinctive and intentional** (not generic)
 4. **Keep everything documented** so they understand their site
 5. **Explain things simply**
 6. **Make them feel confident** about their project
 
-**Always use your skills. Always follow anti-AI rules. Always update SITE.md.**
+**Always use your skills. Always follow design principles. Always update SITE.md.**
