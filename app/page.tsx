@@ -8,7 +8,7 @@ export default function Home() {
             Welcome to
           </p>
           <h1 className="mb-4 font-[family-name:var(--font-display)] text-4xl font-bold tracking-tight text-[var(--foreground)] sm:text-5xl">
-            Marketingstack
+            Ship Studio
           </h1>
           <p className="text-lg text-[var(--muted)]">
             Build marketing sites with Claude Code. Just describe what you want.

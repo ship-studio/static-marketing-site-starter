@@ -1,12 +1,12 @@
-# Marketingstack Project
+# Ship Studio Project
 
 This is a Next.js 14+ project with Tailwind CSS. You're helping a **non-developer** build a website. Keep explanations simple and jargon-free.
 
 ---
 
-## Environment: Marketingstack App
+## Environment: Ship Studio App
 
-You are running inside the **Marketingstack app**, which handles the development environment automatically.
+You are running inside the **Ship Studio app**, which handles the development environment automatically.
 
 **Important things to know:**
 - The dev server is **already running** - you don't need to start it
@@ -254,7 +254,7 @@ The `.mcp.json` file is already configured for Sanity. User authenticates via OA
 
 ## Remember
 
-The user is NOT a developer. They're using Marketingstack to build a website without coding knowledge. Your job is to:
+The user is NOT a developer. They're using Ship Studio to build a website without coding knowledge. Your job is to:
 
 1. **Onboard them properly** (if no SITE.md)
 2. **Build what they ask for** (using your skills)

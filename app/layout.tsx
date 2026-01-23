@@ -15,7 +15,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Marketingstack",
+  title: "Ship Studio",
   description: "Build marketing sites with Claude Code. No coding required.",
 };
 

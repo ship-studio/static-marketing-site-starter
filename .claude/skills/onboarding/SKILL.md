@@ -1,6 +1,6 @@
 ---
 name: onboarding
-description: Guided discovery flow for new Marketingstack projects. Asks about business, audience, brand personality, and goals to create a personalized SITE.md and build plan.
+description: Guided discovery flow for new Ship Studio projects. Asks about business, audience, brand personality, and goals to create a personalized SITE.md and build plan.
 user_invocable: true
 ---
 

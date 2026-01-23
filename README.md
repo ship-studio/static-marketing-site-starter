@@ -1,10 +1,10 @@
-# Marketingstack
+# Static Marketing Site Starter
 
 Build marketing sites with Claude Code. No coding required.
 
-## What is Marketingstack?
+## What is this?
 
-Marketingstack is a Next.js template designed specifically for building marketing websites with Claude Code. Just describe what you want to build, and Claude handles all the code.
+A Next.js template designed specifically for building marketing websites with Claude Code inside Ship Studio. Just describe what you want to build, and Claude handles all the code.
 
 ## Getting Started
 
@@ -53,7 +53,7 @@ public/              # Images and files
 
 ## Design Philosophy
 
-Marketingstack follows **Human-First Design Principles**:
+This starter follows **Human-First Design Principles**:
 
 - **Intentional** - Every design choice has a reason
 - **Distinctive** - Not a copy of common patterns
